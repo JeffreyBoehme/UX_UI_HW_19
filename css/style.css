@@ -391,6 +391,7 @@ text-align:center;
 
 .skillarea h3{
   padding-left: 25px;
+  font-size: 25pt;
 }
 
 .skillarea p{
@@ -443,7 +444,7 @@ text-align:center;
 }
 
 #mywork h1{
-
+font-size: 25pt;
 }
 .workgrid h4{
   font-size: 25pt;
@@ -585,7 +586,7 @@ text-align: right;
 
   }
   th{
-    font-size:17px;
+    font-size:20pt;
     width:33%;
 
   }
