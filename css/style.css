@@ -161,7 +161,7 @@ padding:15px;
   }
 
   .jbhero{
-    background-image:url(images/backing.jpg);
+    background-image:url("https://github.com/JeffreyBoehme/UX_UI_HW_19/blob/main/images/backing.jpg");
     Position:absolute;
     background-size: cover;
     background-repeat: no-repeat;
