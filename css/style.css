@@ -178,7 +178,8 @@ padding:15px;
     "jb7 jb8 jb9 jb10 jb11 jb12 jb13"
     "jb14 jb15 jb16 jb17 jb18 jb19 jb20"
     "jb21 jb22 jb23 jb24 jb25 jb26 jb27";
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y: auto;
   }
 
   .tileimage{
