@@ -99,6 +99,9 @@ padding:15px;
 
 
   /* Hero */
+  .hero{
+    height:100%;
+  }
 .heroimage{
   width:100%;
   height:90vh;
