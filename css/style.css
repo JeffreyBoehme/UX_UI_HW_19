@@ -49,7 +49,7 @@ padding:15px;
   .navbutton {
     color: black;
     text-align: center;
-    font-size:29pt;
+    font-size:17pt;
     font-family: 'Montserrat', sans-serif;
     font-style:normal;
     padding:0px 15px;
@@ -75,7 +75,7 @@ padding:15px;
 
 
   .toprightimage{
-  border:solid red 1px;
+
 
   }
   
@@ -99,12 +99,41 @@ padding:15px;
 
 
   /* Hero */
+.heroimage{
+  width:100%;
+  height:90vh;
+  overflow: hidden;
+  object-fit:cover;
+}
 
-  .hero{
-    display:block;
-    width:100%;
-    height:100%;
+  .heropane .textbox{
+    position:absolute;
+    right:12%;
+    top: 100px;
+    width:38%;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size:17pt;
+    background-color: rgba(170,174,182,0.3);
+    border-radius:10px;
 
+  }
+.heropane p{
+  padding-left:25px;
+  padding-right:25px;
+}
+
+
+  .herodesk{
+    animation: fadein 1s ease;
+  }
+  .herotab{
+    display:none;
+  }
+  .heromob{
+    display:none;
   }
   .herobutton{
     position:absolute;
@@ -115,6 +144,10 @@ padding:15px;
   .heropane{
     display:block;
     opacity:0%;
+    height:100%;
+
+    max-height:100%;
+
   }
   .heropane button{
     font-size:13pt;
@@ -125,6 +158,7 @@ padding:15px;
   }
 
   .jbhero{
+    background-image:url(/images/backing.jpg);
     Position:absolute;
     background-size: cover;
     background-repeat: no-repeat;
@@ -144,9 +178,11 @@ padding:15px;
     "jb7 jb8 jb9 jb10 jb11 jb12 jb13"
     "jb14 jb15 jb16 jb17 jb18 jb19 jb20"
     "jb21 jb22 jb23 jb24 jb25 jb26 jb27";
+    overflow-x:hidden;
   }
 
   .tileimage{
+    
   width:100%;
   transform: scale(0);
   }
@@ -319,23 +355,32 @@ position:relative;
 
 #myskills h1{
 text-align: center;
+font-size:20pt;
 }
+#myskills p{
+  text-align: center;
+  font-size:16pt;
+  }
 
 .flexcontainer{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
+column-gap: 50px;
+height:auto;
 
 }
 
 .flexcontainer .p{
   width:30%;
+
 }
 
 .skillarea{
 width: 400px;
 margin:0px 0px 50px 0px;
+text-align:center;
 }
 
 .skillarea h3{
@@ -369,22 +414,40 @@ margin:0px 0px 50px 0px;
   display: flex;
   position: relative;
   flex-direction: column;
-  
+  width:100%;
+  max-width:100%;
+
+  height:100%;
+
+}
+.mywork h1{
+  width:100%;
 }
 
 .workgrid{
   display:grid;
 width:100%;
-  grid-template-columns:400px 1fr;
-  grid-template-rows:300px 300px 300px;
+height:100%;
+  grid-template-columns:39% 59%;
+  grid-template-rows:31% 31% 31%;
   grid-template-areas:
   "workimg1 workinfo1"
   "workimg2 workinfo2"
   "workimg3 workinfo3";
-  grid-column-gap: 50px;
+  grid-column-gap: 2%;
+
 }
 
 #mywork h1{
+
+}
+.workgrid h4{
+  font-size: 20pt;
+  padding-top:0px;
+  margin:0px;
+}
+.workgrid p{
+  font-size: 16pt;
 
 }
 
@@ -407,18 +470,19 @@ width:100%;
   grid-area: workinfo3;
 }
 .workimagearea{
-padding:25px;
+padding:0;
+margin:0px;
 
 }
 
 .workinfoarea{
-  padding:25px;
-
+  padding:50px;
+  margin:0px;
 }
 
 
 .workimg{
-  width:400px;
+  width:100%;
   border-radius: 10px;
   border-bottom: 5px solid #8C94A4;
   
@@ -428,54 +492,7 @@ padding:25px;
 }
 
 
-.projectbox{
 
-width:900px;
-height:200px;
-}
-
-.box1{
-
-margin-left:400px;
-margin-top:105px;
-}
-.box2{
-
-margin-left:550px;
-margin-top:350px;
-}
-.box3{
-
-margin-left:700px;
-margin-top:600px;
-}
-
-.projectimage{
-float:left;
-margin-left:0px;
-}
-.projecttext{
-float:right;
-  margin-right:0px;
-  margin-top:0px;
-
-  height:200px;
-  width:550px;
-}
-
-.aboutme{
- 
-  width:300px;
-  margin-top:400px;
-  margin-left:100px;
-
-}
-
-  .dropin{
-    margin-left:20%;
-    
-  }
-  
 
 
 
@@ -515,7 +532,7 @@ float:right;
     position: relative;
     left: 0;
     bottom: 0;
-margin-top:100px;
+    margin-top:100px;
     width: 100%;
   }
   .bottombackgroundimg{
@@ -534,7 +551,7 @@ margin-top:100px;
   }
 
   .bottomtable{
-width:100%;
+    width:100%;
     text-align: center;
     font-size:20px;
     font-family: 'Montserrat', sans-serif;
@@ -553,11 +570,27 @@ width:100%;
     float: right;
 
   }
-  @media only screen and (max-width:1000px){
+  th{
+    font-size:17px;
+  }
+  
+  @media only screen and (max-width:1011px){
     .heropane button{
       right:8%;
 
       top:14%;
+    }
+    .herodesk{
+      display:none;
+    }
+    .herotab{
+      display:block;
+      animation: fadein 1s ease;
+    }
+    .heropane .textbox{
+      right:2%;  
+      width: 40%;
+      animation: fadein 1s ease;
     }
 
     .topnav-right{
@@ -576,7 +609,7 @@ width:100%;
       display:grid;
     width:100%;
       grid-template-columns:100%;
-      grid-template-rows:300px 300px 300px 300px 300px 300px;
+      grid-template-rows:auto auto auto auto auto auto;
       grid-template-areas:
       "workimg1"
       "workinfo1"
@@ -585,41 +618,98 @@ width:100%;
       "workimg3" 
       "workinfo3";
 
+
+    }
+    .workimg{
+      width:95%;
+    }
+    .workimagearea{
+      display:flex;
+      justify-content:center;
+    width: 100%;
+    }
+    .workgrid h4{
+      text-align: center;
+    
+    }
+    .workgrid p{
+      text-align: center;
+    
+    }
+    .workinfoarea{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
-  @media only screen and (max-width:820px){
-
+  @media only screen and (max-width:866px){
+    .skillarea img{
+      width:95%;
+    }
     .heropane button{
       right:5%;
 
       top:13%;
     }
+    .skillarea{
+      width: 100%;
+      margin:0px 0px 50px 0px;
+      }
 
-.workimagearea{
-  display:flex;
-  justify-content:center;
+    .workimagearea{
+      display:flex;
+      justify-content:center;
+    width: 100%;
+    }
+    .dropin{
+      margin-left:15%;
+    }
+    .bottommenu a{
+      padding: 14px 0px;
+    }
+    .workinfoarea{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .skillarea{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .workgrid h4{
+      text-align: center;
 
-}
-.dropin{
-  margin-left:15%;
-}
-.bottommenu a{
-  padding: 14px 0px;
-}
-.workinfoarea{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-.skillarea{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
+    }
+    .workgrid p{
+      text-align: center;
+
+    }
+    .skillimg{
+
+      height:auto;
+
+    }
   }
 
   @media only screen and (max-width:600px){
 
+    .heropane .textbox{
+      left:15%;  
+      width: 70%;
+      right:15%;
+      animation: fadein 1s ease;
+    }
+    .skillarea img{
+      width:100%;
+    }
+    .herotab{
+      display:none;
+    }
+    .heromob{
+      animation: fadein 1s ease;
+      display:block;
+    }
     .heropane button{
       right:2%;
 
@@ -757,6 +847,6 @@ to{
     from{transform: scale(1);
     }
     to{
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
     }

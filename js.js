@@ -25,3 +25,8 @@ function switchheroback(){
 
 
 switchheroback();
+
+function fade() {
+    $('.jbhero').fadeOut("slow");
+    }
+    setTimeout(fade, 3000);
