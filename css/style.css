@@ -166,7 +166,7 @@ padding:15px;
     background-size: cover;
     background-repeat: no-repeat;
     display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr   ;
+    grid-template-columns:12% 12% 12% 12% 12% 12% 12%;
     grid-template-rows:20% 20% 20% 20% ;
     width:100%;
     height:100%;
