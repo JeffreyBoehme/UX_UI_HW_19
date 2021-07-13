@@ -421,10 +421,7 @@ text-align:center;
   position: relative;
   flex-direction: column;
   width:100%;
-  max-width:100%;
-
   height:100%;
-
 }
 .mywork h1{
   width:100%;
@@ -432,16 +429,16 @@ text-align:center;
 
 .workgrid{
   display:grid;
-width:100%;
-height:100%;
-  grid-template-columns:37% 59%;
-  grid-template-rows:31% 31% 31%;
+  width:100%;
+  height:110%;
+  grid-template-columns:40% 60%;
+  grid-template-rows:auto auto auto;
   grid-template-areas:
   "workimg1 workinfo1"
   "workimg2 workinfo2"
   "workimg3 workinfo3";
-  grid-column-gap: 2%;
-  grid-row-gap:5%;
+
+  overflow:auto;
 
 }
 
@@ -459,21 +456,27 @@ height:100%;
 }
 
 #workimg1{
+  padding:15px;
   grid-area: workimg1;
 }
 #workinfo1{
+  padding:15px;
   grid-area: workinfo1;
 }
 #workimg2{
+  padding:15px;
   grid-area: workimg2;
 }
 #workinfo2{
+  padding:15px;
   grid-area: workinfo2;
 }
 #workimg3{
+  padding:15px;
   grid-area: workimg3;
 }
 #workinfo3{
+  padding:15px;
   grid-area: workinfo3;
 }
 .workimagearea{
@@ -489,7 +492,7 @@ margin:0px;
 
 
 .workimg{
-  width:100%;
+  width:90%;
   border-radius: 10px;
   border-bottom: 5px solid #8C94A4;
   
@@ -620,7 +623,8 @@ text-align: right;
     }
     .workgrid{
       display:grid;
-    width:100%;
+      width:100%;
+    
       grid-template-columns:100%;
       grid-template-rows:auto auto auto auto auto auto;
       grid-template-areas:
@@ -630,17 +634,22 @@ text-align: right;
       "workinfo2"
       "workimg3" 
       "workinfo3";
-
+      padding:0px;
 
     }
+    
+    .workinfoarea{
+      padding:0px;
+    }
     .workimg{
-      width:95%;
+      width:90%;
+      padding:0px;
     }
     .workimagearea{
       display:flex;
       justify-content:center;
-    width: 100%;
-      padding:0%;
+      width: 100%;
+      padding:0px;
     }
     .workgrid h4{
       text-align: center;
@@ -660,6 +669,15 @@ text-align: right;
       top:105vh;
       right:45%;
       left:45%;
+    }
+    #workimg1{
+      padding:0px;
+    }
+    #workimg2{
+      padding:0px;
+    }
+    #workimg3{
+      padding:0px;
     }
   }
   @media only screen and (max-width:866px){
@@ -764,6 +782,8 @@ text-align: right;
       right:42%;
       left:42%;
     }
+
+
   }
 
   /*@keyframes logotile {
