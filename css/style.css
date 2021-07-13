@@ -21,9 +21,7 @@ body {
 
   }
 
-  .topleft {
-  
-  }
+
   .logo{
     height:9vh;
     width:11vh;
@@ -75,10 +73,7 @@ padding:15px;
   
 
 
-  .toprightimage{
 
-
-  }
   
 
   button{
@@ -578,9 +573,7 @@ margin:0px;
 text-align: left;
   }
 
-  .bottomcenter{
 
-  }
 
   .bottomright{
 text-align: right;
@@ -620,9 +613,7 @@ text-align: right;
     .topnav{
       justify-content:space-between;
     }
-    .name{
-
-    }
+ 
     .workgrid{
       display:grid;
       width:100%;
