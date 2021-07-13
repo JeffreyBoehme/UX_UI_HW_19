@@ -548,7 +548,10 @@ margin:0px;
     bottom:0px;
     z-index: 0;
   }
-
+.bottomcenter{
+  width: 100%;
+  text-align: center;
+}
   .dropin{
     margin-left:15%;
 
@@ -581,7 +584,7 @@ text-align: right;
   }
   th{
     font-size:17pt;
-    width:33%;
+    width:50%;
 
   }
   
