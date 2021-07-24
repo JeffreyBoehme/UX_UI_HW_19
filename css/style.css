@@ -380,24 +380,25 @@ height:auto;
 }
 
 .skillarea{
-width: 400px;
+width: 250px;
 margin:0px 0px 50px 0px;
 text-align:center;
 }
 
 .skillarea h3{
   padding-left: 25px;
-  font-size: 20pt;
+  font-size: 16pt;
 }
 
 .skillarea p{
+  font-size:14pt;
   padding-left: 25px;
   padding-right: 25px;
 }
 
 .skillimg{
-  width:400px;
-  height:250px;
+  width:250px;
+  height:150px;
   border-radius: 10px;
   object-fit:cover;
   border-bottom: 5px solid #8C94A4;
